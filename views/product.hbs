@@ -1,0 +1,46 @@
+<div class="container" style="padding-top:60px">
+  <div class="row">
+    <section class="main col-md-9">
+      <article>
+        <h2>{{product.title}}</h2>
+        <img
+          src={{product.featureImage}}
+          alt="feature Image"
+          style="width:100%"
+        />
+        <br /><br />
+        {{product.body}}
+        <br /><br />
+        <strong>Category:</strong>
+        {{product.category}}<br />
+        <strong>Last Updated:</strong>
+        {{product.postDate}}
+      </article>
+
+    </section>
+    <aside class="col-md-3">
+      <br /><br />
+      <h3>Products</h3>
+      <ul class="list-group">
+        {{#each products}}
+          <a
+            href="products/{{id}}?category={{category}}"
+            class="list-group-item"
+          >{{title}}</a>
+        {{/each}}
+      </ul>
+
+      <h3>Categories</h3>
+
+      <ul class="list-group">
+        {{#each categories}}
+          <a
+            href="/products?category={{id}}"
+            class="list-group-item"
+          >{{category}}</a>
+        {{/each}}
+      </ul>
+
+    </aside>
+  </div>
+</div>
