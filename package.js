@@ -8,7 +8,7 @@
     "start": "node server.js",
     "watch": "node server.js"
   },
-  "author": "Amit Singh Karkri",
+  "author": "Amit Singh Karki",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
